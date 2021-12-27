@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap-5/css/custom/main.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-5/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Menyisipkan library Google Maps -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      // fungsi initialize untuk mempersiapkan peta
+      function initialize() {
+        var propertiPeta = {
+          center: new google.maps.LatLng(-8.5830695, 116.3202515),
+          zoom: 9,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+        };
+
+        var peta = new google.maps.Map(
+          document.getElementById("googleMap"),
+          propertiPeta
+        );
+      }
+
+      // event jendela di-load
+      google.maps.event.addDomListener(window, "load", initialize);
+    </script>
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <main>
+      <div class="my-3 logo">
+        <img src="assets/image/logos-modified.png" alt="" />
+      </div>
+      <section class="hero">
+        <div class="email text-center pt-2 px-3 shadow d-none d-md-flex">
+          <i class="fa fa-envelope text-white" style="font-size: 2rem"></i>
+          <span style="font-size: 0.9rem" class="my-1">いれらえた</span>
+          <i class="fa fa-chevron-circle-right" style="font-size: 1.5rem"></i>
+        </div>
+        <div class="text-center pt-5 text-white">
+          <div style="margin-bottom: -30px">
+            <img src="assets/image/logos-modified.png" class="pb-5" alt="" />
+            <h1 class="display-5 fw-bold d-inline">能ふかのうだろうと思お</h1>
+          </div>
+          <h3 class="display-7 fw-bold mb-5" style="color: salmon">
+            居宅介護支援事業
+          </h3>
+          <div class="col-lg-6 mx-auto">
+            <p>住みなれた地元で、穏やかに暮らしたい…</p>
+            <p>そんな願いに寄り添い、</p>
+            <p>オーダーメイドで介護プランを提案します。</p>
+            <div
+              class="mt-1 h6 d-grid gap-5 d-sm-flex justify-content-sm-center"
+            >
+              湖西市・浜松市の高齢者の皆様に寄り添う居宅介護支援事業所で、
+              地域の高齢者の方々の心身の状態やご要望、ご家族様の状況などを踏まえた上で、適切な介護プランを作成。
+              高齢者の方々の願いに寄り添い、住み慣れた自宅や地元での穏やかな暮らしをサポートいたします。
+            </div>
+          </div>
+        </div>
+        <div class="wave">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1100 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </section>
+      <section class="features py-5 my-5">
+        <div class="text-center container">
+          <h6 class="fw-bold" style="color: salmon">Features of Kaname</h6>
+          <div
+            class="
+              position-relative
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+          >
+            <h3 class="feature-title">ケアプランかなめの特長</h3>
+            <hr class="position-absolute" width="50%" />
+          </div>
+          <div class="row mt-5" style="padding: 0 60px">
+            <div class="col-md-4 col-xs-12 pb-5">
+              <img
+                src="assets/image/shutterstock_1816968479.jpg"
+                class="img-fluid rounded-circle"
+                alt=""
+                style="width: 180px; height: 180px"
+              />
+              <div class="mt-3">
+                <abbr title="attribute"
+                  >経験豊富なケアマネージャーが
+                  介護全般のご相談に懇切丁寧に対応</abbr
+                >
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12 pb-5">
+              <img
+                src="assets/image/shutterstock_280281134.jpg"
+                class="img-fluid rounded-circle"
+                alt=""
+                style="width: 180px; height: 180px"
+              />
+              <div class="mt-3">
+                <abbr title="attribute"
+                  >高齢者やご家族の皆様の
+                  心に寄り添い、的確なケアプランを作成</abbr
+                >
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <img
+                src="assets/image/shutterstock_1745486783.jpg"
+                class="img-fluid rounded-circle"
+                alt=""
+                style="width: 180px; height: 180px"
+              />
+              <div class="mt-3">
+                <abbr title="attribute"
+                  >住環境整備の為、住宅改修の申請・対応
+                  福祉用具レンタル・特別購入品の対応</abbr
+                >
+              </div>
+            </div>
+          </div>
+          <div class="jumbotron mt-5">
+            <div
+              class="card mx-auto feature-card position-relative"
+              style="max-width: 50rem"
+            >
+              <h3 class="position-absolute title-feature">居宅介護支援とは</h3>
+              <div class="card-body p-5">
+                要介護認定を受けた方が、最適な介護サービスを受けることができるようサポートしてくれる専門家であるケアマネジャーが所属する事業所です。在宅で介護保険サービスを利用するために必要なケアプランをケアマネジャーが作成し、管理します。
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="business-content">
+        <div class="wave">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1100 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              fill="#eaeaea"
+            ></path>
+          </svg>
+        </div>
+        <div class="wave top">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <div class="container text-center">
+          <h6 class="text-white">Business contents</h6>
+          <div
+            class="
+              position-relative
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+          >
+            <h3 class="business-title">主な業務内容</h3>
+            <hr class="position-absolute hr" width="50%" />
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-4 col-xs-12">
+              <div class="card pt-4 px-5">
+                <div class="card-title">
+                  <i class="far fa-comments display-3"></i>
+                </div>
+                <div class="card-body">
+                  <abbr title="attribute"
+                    >利用者様、ご家族様からの 相談に対応</abbr
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12 my-4 my-md-0">
+              <div class="card pt-4 px-5">
+                <div class="card-title">
+                  <i class="far fa-lightbulb display-3"></i>
+                </div>
+                <div class="card-body">
+                  <abbr title="attribute"
+                    >相談内容の把握と お悩みの解決策のご提案</abbr
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="card pt-4 px-5">
+                <div class="card-title">
+                  <i class="far fa-file-alt display-3"></i>
+                </div>
+                <div class="card-body">
+                  <abbr title="attribute"
+                    >解決策に応じた サービス事業所などの情報提供</abbr
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-4 col-xs-12">
+              <div class="card pt-4 px-5">
+                <div class="card-title">
+                  <i class="far fa-edit display-3"></i>
+                </div>
+                <div class="card-body">
+                  <abbr title="attribute"
+                    >介護サービス計画書 （ケアプラン）の立案</abbr
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12 my-4 my-md-0">
+              <div class="card pt-4 px-5">
+                <div class="card-title">
+                  <i class="far fa-calendar-alt display-3"></i>
+                </div>
+                <div class="card-body">
+                  <abbr title="attribute">サービス事業所との 連絡・調整</abbr>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <div class="card pt-4 px-5">
+                <div class="card-title">
+                  <i class="far fa-building display-3"></i>
+                </div>
+                <div class="card-body">
+                  <abbr title="attribute"
+                    >定期的な自宅訪問による 介護状況の把握</abbr
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="start-guide">
+        <div class="container text-center">
+          <h6>Quick start guide</h6>
+          <div
+            class="
+              position-relative
+              d-flex
+              justify-content-center
+              align-items-center
+            "
+          >
+            <h3 class="guide-title">ご利用の流れ</h3>
+            <hr class="position-absolute hr" width="50%" />
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="card guide-card container px-lg-5">
+                <div class="card-title"></div>
+                <div class="card-body py-5">
+                  <div class="row">
+                    <div class="col-12 mb-5">
+                      <div
+                        class="
+                          position-relative
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="guide-content-title">
+                          <h3>要介護認定の申請</h3>
+                          <div class="number">
+                            <h2>1</h2>
+                          </div>
+                        </div>
+                        <hr
+                          class="position-absolute"
+                          style="border-top: 2px dotted black"
+                          width="90%"
+                        />
+                      </div>
+                      <div class="px-lg-5 pt-2">
+                        <p>
+                          お住まいの市区町村の介護保険の窓口、または、地域包括支援センター、居宅介護支援事業所（代行申請）などで申請が可能です。申請は本人、または家族が代理で行います。（基本的には65歳以上が対象ですが、16種類の特定疾患の方は40歳～64歳でも利用可能です）
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-5">
+                      <div
+                        class="
+                          position-relative
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="guide-content-title">
+                          <h3>認定調査と主治医意見書</h3>
+                          <div class="number">
+                            <h2>2</h2>
+                          </div>
+                        </div>
+                        <hr
+                          class="position-absolute"
+                          style="border: 1px dashed black"
+                          width="90%"
+                        />
+                      </div>
+                      <div class="px-lg-5 pt-2">
+                        <p>
+                          市役所の認定調査員などが自宅を訪問し、心身の状況について本人や家族から聞き取り調査を行います。
+                          また、本人の主治医に心身の状況についての意見書を制作してもらいます。
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-5">
+                      <div
+                        class="
+                          position-relative
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="guide-content-title">
+                          <h3>介護の必要度の判定</h3>
+                          <div class="number">
+                            <h2>3</h2>
+                          </div>
+                        </div>
+                        <hr
+                          class="position-absolute"
+                          style="border: 1px dashed black"
+                          width="90%"
+                        />
+                      </div>
+                      <div class="px-lg-5 pt-2">
+                        <p>
+                          介護認定審査会認定調査員の面談調査をもとに、主治医の意見書、特記事項などから専門家が検討し、介護の必要度を判定します。
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-5">
+                      <div
+                        class="
+                          position-relative
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="guide-content-title">
+                          <h3>要支援・要介護の認定</h3>
+                          <div class="number">
+                            <h2>4</h2>
+                          </div>
+                        </div>
+                        <hr
+                          class="position-absolute"
+                          style="border: 1px dashed black"
+                          width="90%"
+                        />
+                      </div>
+                      <div class="px-lg-5 pt-2">
+                        <p>
+                          要支援・要介護度が認定されます。認定期間は介護の必要度に応じて決められます。
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-5">
+                      <div
+                        class="
+                          position-relative
+                          d-flex
+                          justify-content-center
+                          align-items-center
+                        "
+                      >
+                        <div class="guide-content-title">
+                          <h3>ケアプランの作成</h3>
+                          <div class="number">
+                            <h2>5</h2>
+                          </div>
+                        </div>
+                        <hr
+                          class="position-absolute"
+                          style="border: 1px dashed black"
+                          width="90%"
+                        />
+                      </div>
+                      <div class="px-lg-5 pt-2">
+                        <p>
+                          要支援の認定の人は地域包括支援センターに、要介護の認定　の人は居宅介護支援事業者のケアマネジャーに作成を依頼します。※非該当でも総合事業が利用できる場合があります。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="access py-5 position-relative">
+        <div class="wave top">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill="#eaeaea"
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            ></path>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-6 text-white">
+              <h6>Access</h6>
+              <div
+                class="
+                  position-relative
+                  d-flex
+                  justify-content-center
+                  align-items-center
+                "
+              >
+                <h3 class="access-title text-dark">ご利用のご案内</h3>
+                <hr class="position-absolute hr" width="50%" />
+              </div>
+              <div class="my-5">
+                <h3>ケアプランかなめ</h3>
+                <img src="assets/image/home.jpg" class="w-100 mt-3" alt="" />
+                <div class="mt-5 mb-2">
+                  <a href="#" class="btn btn-light text-salmon"
+                    >ケアプランかなめをご利用できる方</a
+                  >
+                </div>
+                <p>介護保険で要介護1〜5</p>
+              </div>
+              <div class="mb-4">
+                <div class="mb-4">
+                  <a href="#" class="btn btn-light text-salmon">お問い合わせ</a>
+                </div>
+                <p>
+                  お問い合わせは、電話・メールにていつでも受け付けております。
+                </p>
+                <p>お急ぎの方は、下記電話番号まで、ご連絡をお願い致します。</p>
+              </div>
+              <div class="phone text-dark h3 mb-3">
+                <i class="fa fa-phone-alt"></i> 053-574-2002
+              </div>
+              <div class="mb-4">
+                <a href="#" class="btn btn-dark"
+                  >メールフォームはこちら
+                  <i class="fa fa-chevron-circle-right"></i
+                ></a>
+              </div>
+              <div>
+                <span class="d-block">〒431-0431 静岡県湖西市鷲津2966</span>
+                <span class="d-block">営業時間 : 8:30-17:30</span>
+                <span>定休日 : 土・日・祝日</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="maps">
+        <div id="googleMap" style="width: 100%; height: 380px"></div>
+      </section>
+      <footer class="py-5">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col">
+              <h3>かなめ創建グループ</h3>
+              <h5>人に優しい事業を推進しています</h5>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col-md-3">
+              <img
+                src="assets/image/sponsored/1.png"
+                class="w-100 img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-md-3">
+              <img
+                src="assets/image/sponsored/2.png"
+                class="w-100 img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-md-3">
+              <img
+                src="assets/image/sponsored/3.png"
+                class="w-100 img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-md-3">
+              <img
+                src="assets/image/sponsored/4.png"
+                class="w-100 img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="
+              position-relative
+              d-flex
+              justify-content-end
+              align-items-center
+            "
+          >
+            <div class="guide-content-title">
+              <a href="#">
+                <div class="up">
+                  <h2 class="text-center"><i class="fa fa-arrow-up"></i></h2>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <hr />
+          <div class="text-center">
+            <span>&copy; 2021 Careplan Kaname Inc.</span>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="vendor/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
